@@ -1,0 +1,104 @@
+digraph G {
+rankdir=LR;
+// data_provider
+{ rank=same;
+"BIS";"ECB";"ESTAT";"ESTAT_COMEXT";"ESTAT COMP";"ESTAT GROW";"ESTAT EMPL";"IMF";"OECD";"UNICEF";"UNCD2030";"UNSD";"ILO";"WBG_WITS";"World Bank";"PDH";"ABS";"NBB";"INSEE";"INEGI";"ISTAT";"NOMIS";"LSD";"NCSI";"STAT_EE";"BBK";"KNOEMA";"any SDMX";"Norway";"ONS";"Sweden";"Denmark";"Greenland";"Finland";"CSO";"UNECE";"Iceland";"Faroe Islands";"FSO";"Croatia";"Latvia";"Armenia";"Macedonia";"Spain";"Bulgaria";"SURS";"Japan";"ESTAT PRODCOM";"US Census Bureau";"CBS";"Multiple";"CANSIM";"px format";"DBnomics";"STATCAN economic data";"USDA Cropscape Data";"IRI";"CZSO";"IPUMS";"Argentina HHS";"BLS"
+}
+// software
+{ rank=same;
+"rsdmx";"readsdmx";"rjstat";"oecd";"sorvi";"eurostat";"restatapi";"acs";"inegiR";"cbsodataR";"cbsodata4";"censusapi";"nsoApi";"CANSIM2R";"pxweb";"PxWebApiData";"pxR";"rdbnomics";"readabs";"statcanR";"cdlTools";"csodata";"iriR";"czso";"ipumsr";"eph";"blsR";"danstat"
+}
+// standard
+{ rank=same;
+"SDMX";"JSON-STAT";"ODATA";"PX"
+}
+
+"rsdmx" -> "SDMX" ;
+"SDMX" -> "BIS" ;
+"SDMX" -> "ECB" ;
+"SDMX" -> "ESTAT" ;
+"SDMX" -> "ESTAT_COMEXT" ;
+"SDMX" -> "ESTAT COMP" ;
+"SDMX" -> "ESTAT GROW" ;
+"SDMX" -> "ESTAT EMPL" ;
+"SDMX" -> "IMF" ;
+"SDMX" -> "OECD" ;
+"SDMX" -> "UNICEF" ;
+"SDMX" -> "UNCD2030" ;
+"SDMX" -> "UNSD" ;
+"SDMX" -> "ILO" ;
+"SDMX" -> "WBG_WITS" ;
+"SDMX" -> "World Bank" ;
+"SDMX" -> "PDH" ;
+"SDMX" -> "ABS" ;
+"SDMX" -> "NBB" ;
+"SDMX" -> "INSEE" ;
+"SDMX" -> "INEGI" ;
+"SDMX" -> "ISTAT" ;
+"SDMX" -> "NOMIS" ;
+"SDMX" -> "LSD" ;
+"SDMX" -> "NCSI" ;
+"SDMX" -> "STAT_EE" ;
+"SDMX" -> "BBK" ;
+"SDMX" -> "KNOEMA" ;
+"readsdmx" -> "SDMX" ;
+"SDMX" -> "any SDMX" ;
+"rjstat" -> "JSON-STAT" ;
+"JSON-STAT" -> "Norway" ;
+"JSON-STAT" -> "ONS" ;
+"JSON-STAT" -> "Sweden" ;
+"JSON-STAT" -> "Denmark" ;
+"JSON-STAT" -> "Greenland" ;
+"JSON-STAT" -> "Finland" ;
+"JSON-STAT" -> "CSO" ;
+"JSON-STAT" -> "UNECE" ;
+"JSON-STAT" -> "ESTAT" ;
+"JSON-STAT" -> "Iceland" ;
+"JSON-STAT" -> "Faroe Islands" ;
+"JSON-STAT" -> "FSO" ;
+"JSON-STAT" -> "Croatia" ;
+"JSON-STAT" -> "Latvia" ;
+"JSON-STAT" -> "Armenia" ;
+"JSON-STAT" -> "Macedonia" ;
+"JSON-STAT" -> "Spain" ;
+"JSON-STAT" -> "Bulgaria" ;
+"JSON-STAT" -> "SURS" ;
+"JSON-STAT" -> "World Bank" ;
+"JSON-STAT" -> "Japan" ;
+"oecd" -> "OECD" ;
+"sorvi" -> "Finland" ;
+"eurostat" -> "ESTAT" ;
+"restatapi" -> "ESTAT" ;
+"restatapi" -> "ESTAT_COMEXT" ;
+"restatapi" -> "ESTAT PRODCOM" ;
+"restatapi" -> "ESTAT COMP" ;
+"restatapi" -> "ESTAT GROW" ;
+"restatapi" -> "ESTAT EMPL" ;
+"acs" -> "US Census Bureau" ;
+"inegiR" -> "INEGI" ;
+"cbsodataR" -> "ODATA" ;
+"ODATA" -> "CBS" ;
+"cbsodata4" -> "ODATA" ;
+"censusapi" -> "US Census Bureau" ;
+"nsoApi" -> "Multiple" ;
+"CANSIM2R" -> "CANSIM" ;
+"pxweb" -> "PX" ;
+"PX" -> "Multiple" ;
+"PxWebApiData" -> "PX" ;
+"PX" -> "Norway" ;
+"PX" -> "Sweden" ;
+"PX" -> "Finland" ;
+"pxR" -> "PX" ;
+"PX" -> "px format" ;
+"rdbnomics" -> "DBnomics" ;
+"readabs" -> "ABS" ;
+"statcanR" -> "STATCAN economic data" ;
+"cdlTools" -> "USDA Cropscape Data" ;
+"csodata" -> "CSO" ;
+"iriR" -> "IRI" ;
+"czso" -> "CZSO" ;
+"ipumsr" -> "IPUMS" ;
+"eph" -> "Argentina HHS" ;
+"blsR" -> "BLS" ;
+"danstat" -> "Denmark" ;
+}
