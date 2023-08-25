@@ -20,3 +20,16 @@ pkg_api_links |>
   labs(fill = "API", x = "", y = "", title = "R package vs API")
 
 ggsave("pkg_api.png")
+
+
+api_dataprovider_links <- links[target %in% nt$data_provider, .(api=source, dataprovider=target)]
+api_dataprovider_links[ api %in% nt$software, api := "direct"]
+
+api_dataprovider_links |>
+  ggplot(aes(x = api, y = dataprovider, fill = api)) + geom_tile() +
+  theme_minimal() +
+  labs(fill = "API", x = "", y = "", title = "dataproviders vs API")
+
+ggsave("api_dataprovider.png")
+
+
